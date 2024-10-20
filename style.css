@@ -239,9 +239,54 @@ padding: 2rem;
     
 }
 
+/* jugar-section */
+
+.jugar{
+   
+   width: 80%;
+   margin: auto;
+   padding: 3rem;
+}
+.j-text{
+    
+color: #343A40;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+.j-text h2:nth-child(1){
+    border: 1px solid #DDDDDD;
+    border-bottom: 1px solid white;
+    margin-bottom:-1px ;
+    color: #21A5D5;
+}
+.j-text h2{
+    font-weight: 400;
+    padding: 0.5rem;
+}
+.box{
+ 
+    padding: 1rem;
+    border: 1px solid #DDDDDD;
+}
 
 
-/* Below this is a Medai Qureies section.*/
+/* Ecomerce-section */
+
+
+.ecomerce{
+
+width: 80%;
+margin: auto;
+
+
+
+
+
+}
+/* Below this is a Media Qureies section.*/
 
 
 
@@ -267,7 +312,7 @@ padding: 2rem;
         width: 85%;
     }
     .row-1{
-        width: 90%;
+        width: 100%;
     }
 }
 @media (max-width:950px) {
@@ -323,10 +368,19 @@ nav button{
     
 }
 .M-card{
-    width: 80%;
+    width: 100%;
 }
 .Masteries{
     text-align: center;
+}
+.jugar{
+    width: 95%;
+}
+.j-text{
+    flex-direction: column;
+}
+.box{
+    display: none;
 }
 }
 
