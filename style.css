@@ -130,10 +130,55 @@ margin-bottom: 5rem;
     margin: 4rem 0;
     
 }
+/* Solution section */
 
-/* Media Quries below 760px */
+
+.solution{
+    background-image: url(https://simplexts.net/wp-content/uploads/2023/12/Untitled-design-10-1-1.png);
+ height: 100vh;
+ /* width: 100%; */
+ background-position: 20% 40% ;
+ object-fit: cover;
+ background-size: cover;
+ text-align: center;
+ color:white ;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: center;
+ /* margin-top: -5rem; */
+ gap: 2rem;
+ padding: 2rem;
+}
+.solution h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    /* width: 80%; */
+   /* margin-top: 7rem; */
+}
+.solution-img ul {
+    display: flex;
+   justify-content: space-between;
+    width: 60%;
+    gap: 5rem;
+ 
+
+    
+}
+.solution-img ul::-webkit-scrollbar{
+    height: 11px;
+}
 
 
+.solution ul li{
+    list-style: none;
+margin: 0 3rem;
+
+
+}
+/* Below this is a Medai Qureies section.*/
+
+/*  */
 
 
 @media (max-width:1330px) {
@@ -169,7 +214,7 @@ margin-bottom: 5rem;
     }
  }
 @media (max-width:750px) {
-    
+  
 .header-left{
     display: none;
 }
@@ -188,6 +233,16 @@ nav button{
 }
 .main-left,.main-right{
     width: 95%;
+}
+
+
+.solution ul{
+    overflow-x: scroll;
+   } 
+
+::-webkit-scrollbar-thumb{
+    background: wheat;
+    border-radius:4px;
 }
 
 }
