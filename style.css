@@ -340,5 +340,9 @@ nav button{
         width: 90%;
         text-align: center;
     }
+   
+    .M-card{
+        width: 95%;
+    }
 }
 
