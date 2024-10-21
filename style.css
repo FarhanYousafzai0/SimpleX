@@ -331,7 +331,7 @@ align-items: center;
 
 }
 
-
+/* Features */
 
 
 
@@ -386,8 +386,8 @@ align-items: center;
     padding: 1rem 1.5rem;
     border: none;
     border-radius: 25px;
-    background-color:white;
-    color: var(--primary-color);
+    background-color:var(--primary-color);
+    color: white;
     font-weight: bold;
     
 }
@@ -398,6 +398,37 @@ align-items: center;
     scale: 1.1;
     
 }
+
+/* customer */
+
+
+
+.customer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    /* height: 60%; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+.c-text{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.c-text h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.c-text p{
+    font-size: 1.3rem;
+    color: #343A40;
+}
+
+
+/*  */
 /* Below this is a Media Qureies section.*/
 
 
@@ -495,6 +526,9 @@ align-items: center;
     .features-left,.features-right{
         width: 100%;
     }
+    .features-right img{
+       display: none;
+    }
  }
 @media (max-width:750px) {
   
@@ -568,11 +602,671 @@ nav button{
 .android-left h2,i{
     font-size: 1.5rem;
 }
+.ecomerce-text{
+    padding: 1rem;
+}
 .ecomerce-text p{
     font-size: 1rem;
 }
 .ecomerce-text h2{
     font-size: 1.5rem;
+}
+.customer{
+    width: 90%;
+}
+.c-text h2{
+    font-size: 1.5rem;
+}
+.c-text p{
+    font-size: 1rem;
+}
+.c-text{
+    padding: 1rem;
+}
+}
+
+
+
+@media (max-width:460) {
+    .project{
+        width: 95%;
+    } 
+    .project-left,.project-right{
+        width: 90%;
+        text-align: center;
+    }
+   
+    .M-card{
+        width: 95%;
+    }
+   
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Variables */
+:root{
+    --primary-color:#21A5D5;
+}
+
+
+.header-section{
+ background-color: var(--primary-color);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+ 
+    
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+.header-left,.header-right{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.h-1 i,.h-2 i{
+    color: black;
+}
+.h-1,.h-2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-right i {
+margin: 0 0.5rem;
+color: #176986;
+    font-size: 1rem;
+}
+.nav-section{
+ 
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+    padding: 0.5rem;
+
+}
+.nav-items ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+ul li{
+    font-size: 1.3rem;
+}
+.nav-items ul  i{
+    font-size: 2rem;
+    display: none;
+}
+nav button{
+    padding: 0.7rem 2rem;
+    color: white ;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 0.5;
+    border-radius: 30px;
+   gap: 0.2rem;
+    font-size: 1rem;
+display: flex;
+align-items: center;
+}
+.bi {
+ font-weight: bold; 
+
+ font-size: 1.4rem;  
+}
+.nav-items ul li{
+    font-size: 1.1rem;
+}
+/* Hero-section */
+
+
+.Hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+.main-left p{
+    color: #343A40;
+    font-size: 2rem;
+}
+.main-left h2{
+font-size: 2.5rem;
+margin-top: 1.5rem;
+margin-bottom: 5rem;
+}
+.main-left,.main-right{
+    width: 50%;
+    
+}
+.demo-btn{
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 4rem 0;
+    
+}
+/* Solution section */
+.solution{
+    
+    background-image: url(https://simplexts.net/wp-content/uploads/2023/12/Untitled-design-10-1-1.png);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+text-align: center;
+align-items: center;
+  background-position:center;
+object-fit: cover;
+
+  gap: 2rem;
+  color: white;
+  padding: 2rem;
+ 
+
+}
+.text h2{
+    font-size:2rem ;
+    font-weight: lighter;
+}
+
+
+.s-img {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+ 
+    justify-content: space-between;
+   
+}
+/* project-sec */
+.project{
+    display: flex;
+justify-content: space-around;
+width: 80%;
+margin: auto;
+padding: 2rem;
+}
+.project-left,.project-right{
+    width: 50%;
+    margin: auto;
+    
+
+}
+.project-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.project-left p{
+    color: #503434;
+    font-size: 1rem;
+}
+.project-left h2{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.project-right{
+    display: flex;
+   justify-content: space-around;
+}
+.col-1{
+   display: flex;
+   flex-direction: column;
+  
+}
+
+/* Masteries */
+.Masteries{
+ background-color: var(--primary-color);
+ /* height: 80vh; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 2rem;
+ color: white;
+ gap: 2.5rem;
+}
+.row-1{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.M-card{
+    color: black;
+    padding: 1rem;
+    background-color: white;
+    height: 130px;
+    width: 150px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px 2px gray;
+    border-radius: 25px;
+}
+.M-card p{
+    color: #343A40;
+    font-size: 1.2rem;
+}
+
+
+
+/* Vedio */
+.vedio {
+    height: 100%;
+    
+}
+
+/* jugar-section */
+
+.jugar{
+   
+   width: 80%;
+   margin: auto;
+   padding: 3rem;
+}
+.j-text{
+    
+color: #343A40;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+.j-text h2:nth-child(1){
+    border: 1px solid #DDDDDD;
+    border-bottom: 1px solid white;
+    margin-bottom:-1px ;
+    color: #21A5D5;
+}
+.j-text h2{
+    font-weight: 400;
+    padding: 0.5rem;
+}
+.box{
+ 
+    padding: 1rem;
+    border: 1px solid #DDDDDD;
+}
+
+
+/* Ecomerce-section */
+
+
+.ecomerce{
+
+width: 80%;
+margin: auto;
+padding: 2rem;
+
+
+
+
+}
+.ecomerce-text{
+display: flex;
+flex-direction: column;
+gap: 0.7rem;
+/* width: 50%; */
+}
+.ecomerce-text h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.ecomerce-text p{
+    font-size: 1.5rem;
+color: #343A40;
+}
+
+.Android{
+
+   
+    display: flex;
+ /* margin: 1rem 0; */
+align-items: center;
+}
+.android-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+.android-left h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.android-left p{
+    color: #343A40;
+    font-size: 1.5rem;
+}
+.android-left,.android-right{
+    width: 50%;
+   /* margin: auto; */
+
+}
+
+/* Features */
+
+
+
+.features{
+    background-image: url(https://simplexts.net/wp-content/uploads/2023/12/Untitled-design-23-1.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+.f-text h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+.features-sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* background-color: red; */
+}
+.features-left,.features-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: start;
+}
+.features-left p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.hilight-f{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hilight-f ol{
+    line-height: 2rem;
+}
+.hilight-f h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+.f-btn button{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color:var(--primary-color);
+    color: white;
+    font-weight: bold;
+    
+}
+.features-right img{
+    transition: all 0.3s;
+}
+.features-right img:hover{
+    scale: 1.1;
+    
+}
+
+/* customer */
+
+
+
+.customer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    /* height: 60%; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+.c-text{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.c-text h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.c-text p{
+    font-size: 1.3rem;
+    color: #343A40;
+}
+
+
+/*  */
+/* Below this is a Media Qureies section.*/
+
+
+
+@media (max-width:1330px) {
+    header,nav{
+        width: 90%;
+    }
+   
+   
+}
+@media (max-width:1150px) {
+    header,nav{
+        width: 100%;
+    }
+    .ecomerce{
+        width: 90%;
+    }
+    .features{
+        width: 100%;
+    }
+    .features-sec{
+        width: 100%;
+    }
+}
+  
+
+@media (max-width:1000px) {
+    nav ul li{
+        display: none;
+    }
+    .nav-items ul  i{
+        
+        display: block;
+    }
+    .Hero{
+        width: 85%;
+    }
+    .row-1{
+        width: 100%;
+    }
+    header,nav{
+        width: 100%;
+    }
+    .features-sec{
+        width: 100%;
+    }
+    .features{
+        width: 90%;
+    }
+}
+@media (max-width:950px) {
+    header,nav{
+        width: 100%;
+    }
+    .Hero{
+        width: 95%;
+        margin-top: 2rem;
+        
+    }
+    .project-left,.project-right{
+        width: 90%;
+        text-align: center;
+    }
+    .features{
+        width: 100%;
+    }
+ }
+
+
+
+ @media (max-width:880px) {
+    .Android{
+        flex-direction: column;
+    }
+    .android-left,.android-right{
+        width: 100%;
+    }
+    .android-right img{
+        width: 70%;
+    }
+.features-sec{
+    height: 100%;
+}
+    .features-sec{
+        flex-direction: column;
+        text-align: center;
+    }
+    .features-right img{
+        height: 70%;
+    }
+    .f-text h2{
+        margin-top: 1rem;
+    }
+    .features-left,.features-right{
+        width: 100%;
+    }
+    .features-right img{
+       display: none;
+    }
+ }
+@media (max-width:750px) {
+  
+.header-left{
+    display: none;
+}
+header{
+    justify-content: flex-start ;
+
+}
+nav button{
+    display: none;
+}
+.Hero{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+}
+.main-left,.main-right{
+    width: 95%;
+}
+
+
+.project{
+    flex-direction: column;
+    gap: 2rem;
+}
+.project-left,.project-right{
+    width: 100%;
+    text-align: center;
+}
+.project-left p{
+    font-size: 1.5rem;
+}
+.row-1{
+    flex-direction: column;
+    
+}
+.M-card{
+    width: 85%;
+}
+.Masteries{
+    text-align: center;
+}
+.jugar{
+    width: 95%;
+}
+.j-text{
+    flex-direction: column;
+}
+.box{
+    display: none;
+}
+.features{
+    width: 100%;
+}
+
+.ecomerce{
+    width: 80%;
+}
+.android-left p{
+    font-size: 1rem;
+}
+.android-right img{
+    margin-top: 1rem;
+}
+.android-left i{
+    font-size: 0.5rem;
+}
+.android-left h2,i{
+    font-size: 1.5rem;
+}
+.ecomerce-text{
+    padding: 1rem;
+}
+.ecomerce-text p{
+    font-size: 1rem;
+}
+.ecomerce-text h2{
+    font-size: 1.5rem;
+}
+.customer{
+    width: 90%;
+}
+.c-text h2{
+    font-size: 1.5rem;
+}
+.c-text p{
+    font-size: 1rem;
+}
+.c-text{
+    padding: 1rem;
 }
 }
 
