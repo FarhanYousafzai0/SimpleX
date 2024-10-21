@@ -4,6 +4,10 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+body,html{
+    width: 100%;
+    height: 100%;
+}
 
 
 /* Variables */
@@ -280,11 +284,119 @@ color: #343A40;
 
 width: 80%;
 margin: auto;
+padding: 2rem;
+
+
+
+
+}
+.ecomerce-text{
+display: flex;
+flex-direction: column;
+gap: 0.7rem;
+/* width: 50%; */
+}
+.ecomerce-text h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.ecomerce-text p{
+    font-size: 1.5rem;
+color: #343A40;
+}
+
+.Android{
+
+   
+    display: flex;
+ /* margin: 1rem 0; */
+align-items: center;
+}
+.android-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+.android-left h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.android-left p{
+    color: #343A40;
+    font-size: 1.5rem;
+}
+.android-left,.android-right{
+    width: 50%;
+   /* margin: auto; */
+
+}
 
 
 
 
 
+.features{
+    background-image: url(https://simplexts.net/wp-content/uploads/2023/12/Untitled-design-23-1.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+.f-text h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+.features-sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* background-color: red; */
+}
+.features-left,.features-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: start;
+}
+.features-left p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.hilight-f{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hilight-f ol{
+    line-height: 2rem;
+}
+.hilight-f h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+.f-btn button{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color:white;
+    color: var(--primary-color);
+    font-weight: bold;
+    
+}
+.features-right img{
+    transition: all 0.3s;
+}
+.features-right img:hover{
+    scale: 1.1;
+    
 }
 /* Below this is a Media Qureies section.*/
 
@@ -294,12 +406,25 @@ margin: auto;
     header,nav{
         width: 90%;
     }
+   
+   
 }
 @media (max-width:1150px) {
     header,nav{
-        width: 95%;
+        width: 100%;
+    }
+    .ecomerce{
+        width: 90%;
+    }
+    .features{
+        width: 100%;
+    }
+    .features-sec{
+        width: 100%;
     }
 }
+  
+
 @media (max-width:1000px) {
     nav ul li{
         display: none;
@@ -314,10 +439,19 @@ margin: auto;
     .row-1{
         width: 100%;
     }
+    header,nav{
+        width: 100%;
+    }
+    .features-sec{
+        width: 100%;
+    }
+    .features{
+        width: 90%;
+    }
 }
 @media (max-width:950px) {
-    header,nav {
-     width: 100%;
+    header,nav{
+        width: 100%;
     }
     .Hero{
         width: 95%;
@@ -327,6 +461,39 @@ margin: auto;
     .project-left,.project-right{
         width: 90%;
         text-align: center;
+    }
+    .features{
+        width: 100%;
+    }
+ }
+
+
+
+ @media (max-width:880px) {
+    .Android{
+        flex-direction: column;
+    }
+    .android-left,.android-right{
+        width: 100%;
+    }
+    .android-right img{
+        width: 70%;
+    }
+.features-sec{
+    height: 100%;
+}
+    .features-sec{
+        flex-direction: column;
+        text-align: center;
+    }
+    .features-right img{
+        height: 70%;
+    }
+    .f-text h2{
+        margin-top: 1rem;
+    }
+    .features-left,.features-right{
+        width: 100%;
     }
  }
 @media (max-width:750px) {
@@ -368,7 +535,7 @@ nav button{
     
 }
 .M-card{
-    width: 100%;
+    width: 85%;
 }
 .Masteries{
     text-align: center;
@@ -381,6 +548,31 @@ nav button{
 }
 .box{
     display: none;
+}
+.features{
+    width: 100%;
+}
+
+.ecomerce{
+    width: 80%;
+}
+.android-left p{
+    font-size: 1rem;
+}
+.android-right img{
+    margin-top: 1rem;
+}
+.android-left i{
+    font-size: 0.5rem;
+}
+.android-left h2,i{
+    font-size: 1.5rem;
+}
+.ecomerce-text p{
+    font-size: 1rem;
+}
+.ecomerce-text h2{
+    font-size: 1.5rem;
 }
 }
 
@@ -398,5 +590,7 @@ nav button{
     .M-card{
         width: 95%;
     }
+   
+  
 }
 
